@@ -1,6 +1,6 @@
 # Securing The Cloud Configuration
 
-## We are simply going to reduce the risks as much as possible by the following sections: 
+## We will mitigate risks by focusing on the following areas:: 
 
 <div>
 
@@ -23,27 +23,6 @@
 - VM Windows 10 PRO (21H2)
 - VM Linux Ubuntu 20.12
 
-After 24 Hours of Configuring NSG: 
-<div>
-
-Previous lab, we did some basic lockdowns and have a secure score of 54% and here are the results 24 hours later. 
-
-![Linux SSH Auth](https://user-images.githubusercontent.com/109401839/235417071-d99a0c53-6d99-47f9-8203-e3a1bdd427f8.png)
-
-![MYSQL AUTH FAIL](https://user-images.githubusercontent.com/109401839/235417072-245f83dc-53cd-455c-ab54-169674b0ab18.png)
-
-![nsg malicious in flow](https://user-images.githubusercontent.com/109401839/235417074-0e59086f-2ad0-496d-bb43-5941d476b351.png)
-
-![windows and smb auth fail](https://user-images.githubusercontent.com/109401839/235417075-4478e72e-1768-4b61-9e98-ab6317f5dec8.png)
-
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 2401 (-93.85%)
-| Syslog                   | 730 (-6.65%)
-| SecurityAlert            | 0 (-100.00%)
-| SecurityIncident         | 185 (-16.67%)
-| AzureNetworkAnalytics_CL | 68 (-94.96%)
-
 We still have a major problem with  Malicious NSG Inbound Flow. Now we will increase our hardening methodology and observe the changes in 24 hours. 
 
 #### Regulatory Compliance (NIST 800-53, PCI DSS, CIS) and MDC Recommendations 
@@ -55,18 +34,23 @@ We still have a major problem with  Malicious NSG Inbound Flow. Now we will incr
 
 Reminder: Check your Subscription’s Cost Analysis
 
+#### Regulatory Compliance (NIST 800-53, PCI DSS, CIS) and MDC Recommendations
+
 ### Actions and Observations<b>
 
-- Overview Currently 
+- Presently, the situation can be described as follows: 
 
-![vivaldi_ILnTZamtya](https://user-images.githubusercontent.com/109401839/235340696-8d247dcd-e45f-4e6c-ba90-a6f1d4257766.png)
+<p align="center">
+<img src="https://i.imgur.com/ovREihI.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-Click on Recommendations. 
-Ideally we want to get to 100%. 
+- Navigate to the "Recommendations" section and strive to achieve a secure score of 100%
 
-![vivaldi_sKRdqBEO7l](https://user-images.githubusercontent.com/109401839/235340928-3ad8b009-b1e7-46cd-920c-1b168c094904.png)
+<p align="center">
+<img src="https://i.imgur.com/9wCQsQL.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-Currently, I am at 54%, apply each remediation steps according to Azure and get your score up. 
+- Currently, my secure score is at 65%. Follow the recommended remediation steps provided by Azure to improve the score. 
 
 I will start with the DDos Protection and I wont show everything. However, take your time with this and Azure redirects you to everything. 
 
