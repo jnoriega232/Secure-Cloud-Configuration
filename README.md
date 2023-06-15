@@ -251,6 +251,8 @@ After 24 Hours of Locking - Down Environment:
 <img src="https://i.imgur.com/tW1wKYa.png" height="70%" width="70%" alt="Azure Free Account"/> 
 </p>
 
+- Upon executing the queries for each of the distinct security events we have been monitoring, we can discern that every query is yielding no results. This outcome is highly favorable as it signifies the efficacy of the environment hardening measures we diligently implemented. Consequently, the attacks we previously encountered have been entirely mitigated, showcasing the significant impact of our proactive security enhancements.
+
 ![Linux SSH Auth Failure](https://user-images.githubusercontent.com/109401839/235539282-d6f0bfa4-0514-4288-b358-7ffa241b8f04.png)
 
 ![MySQL Authentication Failures](https://user-images.githubusercontent.com/109401839/235539283-b15bec27-f34e-405a-83f6-e4fa3ca38fd9.png)
@@ -263,20 +265,12 @@ After 24 Hours of Locking - Down Environment:
 
 <div>
 
-Well, this series of projects in Microsoft Azure is finally at its conclusion.
+After an extensive series of projects in Microsoft Azure, we have now reached its long-awaited culmination.
 
-Over time there will be updates and cleaning up. 
+In the coming days, there will be ongoing updates and maintenance to ensure optimal functionality.
 
-However, whoever is viewing this. 
+To whomever is perusing this content, I sincerely hope that you have gained substantial knowledge from this experience, as I have undoubtedly enriched my own understanding throughout the process.
 
-I hope  you learned a lot because I have learned a lot. 
+Overall, the entire endeavor spanned approximately two weeks, although personal obligations occasionally interrupted its seamless progression. Consequently, there might be minor discrepancies in certain dates, which I kindly ask for your understanding.
 
-I started this project April 9th, 2023 and completed it May 1st, 2023.
-Overall it took roughly two weeks to complete everything. 
-Handling personal matters, took time away from this project.
-
-Next project, which is optional, will be a Business Data Analysis project of project. 
-
-![vivaldi_ZZiizg1fZY](https://user-images.githubusercontent.com/109401839/235540432-04a309b3-70db-4885-a61f-f7a14a2f16b2.png)
-
-Thank you.
+With heartfelt appreciation, I express my gratitude to all who have followed and engaged with this journey.
