@@ -244,13 +244,12 @@ After 24 Hours of Locking - Down Environment:
 | SecurityIncident         | 0 (-100%)
 | AzureNetworkAnalytics_CL | 0 (-100%)
 
-<p align="center">
+ <p align="center">
 <img src="https://i.imgur.com/zT9JutR.png" height="70%" width="70%" alt="Azure Free Account"/> 
-</p
-
+</p>
 <p align="center">
 <img src="https://i.imgur.com/tW1wKYa.png" height="70%" width="70%" alt="Azure Free Account"/> 
-</p
+</p>
 
 ![Linux SSH Auth Failure](https://user-images.githubusercontent.com/109401839/235539282-d6f0bfa4-0514-4288-b358-7ffa241b8f04.png)
 
