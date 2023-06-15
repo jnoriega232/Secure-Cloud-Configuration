@@ -163,7 +163,7 @@ Reminder: Check your Subscription’s Cost Analysis
 
 - We can successfully resolve it, revealing a public IP address; however, it is imperative to note that we do not possess accessibility to it. This distinction carries significant weight as my home computer is not connected to the Virtual Network (VNET) where the keyvault is situated. 
 
-5b. The address of the storage account is represented as , ```https://sacyberlabb01.blob.core.windows.net/``` which is derived from the Blob service. As you may recall, we recently disabled this access to sever the connection between our services and the public web.
+5b. The address of the storage account is represented as, ```https://sacyberlabb01.blob.core.windows.net/``` which is derived from the Blob service. As you may recall, we recently disabled this access to sever the connection between our services and the public web.
 
 <p align="center">
 <img src="https://i.imgur.com/NhX8NjS.png" height="70%" width="70%" alt="Azure Free Account"/> 
@@ -238,13 +238,19 @@ After 24 Hours of Locking - Down Environment:
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 0 (-100%)
-| Syslog                   | 0 (-100%)
+| SecurityEvent            | 17718 (-23.45%)
+| Syslog                   | 24 (-98.87%)
 | SecurityAlert            | 0 (-100%)
 | SecurityIncident         | 0 (-100%)
 | AzureNetworkAnalytics_CL | 0 (-100%)
 
-![vivaldi_2ebSstcfdc](https://user-images.githubusercontent.com/109401839/235537587-a0c39f9c-3bea-4859-a736-80899a8ae56c.png)
+<p align="center">
+<img src="https://i.imgur.com/zT9JutR.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p
+
+<p align="center">
+<img src="https://i.imgur.com/tW1wKYa.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p
 
 ![Linux SSH Auth Failure](https://user-images.githubusercontent.com/109401839/235539282-d6f0bfa4-0514-4288-b358-7ffa241b8f04.png)
 
