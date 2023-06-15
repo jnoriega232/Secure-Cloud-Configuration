@@ -23,9 +23,8 @@
 - VM Windows 10 PRO (21H2)
 - VM Linux Ubuntu 20.12
 
-We still have a major problem with  Malicious NSG Inbound Flow. Now we will increase our hardening methodology and observe the changes in 24 hours. 
+Despite implementing certain hardening measures in the previous lab, we still face a significant issue regarding Malicious NSG Inbound Flow. As a result, we will now intensify our hardening methodology and carefully monitor the changes over the next 24 hours.
 
-#### Regulatory Compliance (NIST 800-53, PCI DSS, CIS) and MDC Recommendations 
 <details close>
 
 <div>
