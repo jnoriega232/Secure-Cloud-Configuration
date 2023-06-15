@@ -145,7 +145,7 @@ Reminder: Check your Subscription’s Cost Analysis
 
 4. Examine the topology to observe the presence of private endpoints for both the Key Vault and Storage Account.
 
-5. Access the "windows-vm" and verify the IP addresses assigned to your Key Vault and Storage Account instances.
+5. Please access the "windows-vm" and employ PowerShell to verify the assigned IP addresses for your Key Vault and Storage Account instances.
 
 5a. My keyvault address, ```akv-cyber-lab02.vault.azure.net``` 
 
