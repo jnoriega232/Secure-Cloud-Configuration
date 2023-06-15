@@ -184,39 +184,48 @@ Reminder: Check your Subscription’s Cost Analysis
 
 - Within our virtual machine (VM), we can observe that it resolves to a private IP address, indicating that it is in the same Virtual Network (VNet) as our storage account and private endpoint.
 
-6. Create NSG & Attach to subnet
+6. Generate a Network Security Group (NSG) and associate it with the respective subnet.
 
-> Once created (I named mine NSG-Subnet) , head to Virtual Networks -> Enter the VNet -> Subnets -> Select default -> Add NSG-Subnet to NSG. -> Save. 
+- After successfully creating the Network Security Group (NSG) – I designated mine as nsg-subnet – navigate to the Virtual Networks section, access the desired Virtual Network (VNet), proceed to the Subnets tab, select the default subnet, and then add the NSG-Subnet to the NSG configuration. Remember to save the changes. 
 
-6a. Network Watcher Topology
+<p align="center">
+<img src="https://i.imgur.com/Omlab24.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p
 
-![vivaldi_JWUR0sOCLh](https://user-images.githubusercontent.com/109401839/235415688-c1a3b912-8271-4e87-8ffe-5b7c0c26002a.png)
+<p align="center">
+<img src="https://i.imgur.com/LqGpxfo.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p
 
-7. We satisfied most of NIST 800-53: SC-7 [Boundary Protection] 
+6a. Let us revisit the Network Watcher Topology for a comprehensive review.
 
-- Just from doing the steps above we increased out Secure Score from 54% to 75% ! 
+<p align="center">
+<img src="https://i.imgur.com/kLzbaPe.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p
+
+7. NIST 800-53: SC-7 [Boundary Protection] 
+
+- By accomplishing the aforementioned steps, we have successfully fulfilled a significant portion of NIST 800-53: SC-7 [Boundary Protection] requirements. As a result, our Secure Score has escalated from 65% to 75%.
 
 ![vivaldi_kFYxmPzqwK](https://user-images.githubusercontent.com/109401839/235415879-fe17a567-1987-4afa-ad16-b4da996d0303.png)
 
-- Somethings does take a few moments in Azure to update. Check the Regulatory Compliance section of Defender for Cloud, here we can see the status of everything. 
+- Please be aware that certain updates in Azure may take a few moments to reflect. To verify the status of everything, including regulatory compliance, navigate to the Regulatory Compliance section of Defender for Cloud. This will provide an overview of the current status. 
 
 ![vivaldi_gPgHNLFsaR](https://user-images.githubusercontent.com/109401839/235416092-7e1021be-6600-4fa7-8b6f-b6fc62b36858.png)
 
-- We know everything is working properly, so I would not worry too much for this. It will take a moment to update.  Now lets wait 24 hours to capture our statisitcs. 
+- Considering that everything is functioning as expected, there is no immediate cause for concern. However, please note that updates may take a short while to fully propagate. Now, let's allow a 24-hour timeframe to elapse in order to capture the relevant statistics. 
 
-### Troubleshooting Methods:
+### Troubleshooting Approaches:
 
-> They should be private addresses, indicating the resources have been probably integrated into private VNet.
+> If the displayed IP addresses are of a private nature, it indicates that the resources have likely been effectively integrated into a private Virtual Network (VNet).
 
-> If you see a public IP address, either it’s not done propagating yet, or it’s not configured correctly.
+> Conversely, the presence of a public IP address suggests that either the propagation process is still underway or there is a configuration discrepancy.
 
-> Possible causes for this are your resources and VM are actually in different Virtual Networks, or something is just not setup right.
+> Potential underlying causes for this situation could include the presence of resources and virtual machines (VMs) in separate Virtual Networks or encountering misconfigurations within the environment.
 
-> The good news is, you don’t need to fix this for the rest of the lab, we are just trying to lock down the environment. 
+> Rest assured that for the remainder of the lab, resolving this particular issue is not imperative, as our primary objective is to secure the overall environment.
 
-> However, if you want to fix it, you can try deleting the Private Endpoints/config and trying again.
+> However, if you are inclined to address the matter, you can consider attempting to delete and recreate the Private Endpoints or adjust related configurations to establish a fresh setup.
 
-### Run SECURE Environment for 24 Hours and Capture Analytics
 <details close>
 
 <div>
@@ -224,6 +233,8 @@ Reminder: Check your Subscription’s Cost Analysis
 </summary>
 
 <div>
+
+### Run SECURE Environment for 24 Hours and Capture Analytics
 
 After 24 Hours of Locking - Down Environment: 
 
