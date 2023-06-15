@@ -116,7 +116,7 @@ Reminder: Check your Subscription’s Cost Analysis
 <p align="center">
 <img src="https://i.imgur.com/GUClCiI.png" height="70%" width="70%" alt="Azure Free Account"/> 
 </p>
-	
+
 2. Set up the configuration of Azure Private Link and Firewall for your instance of Azure Storage Account.
 
 2a. Deactivate public access and configure the endpoint for your Azure Storage Account instance. Repeat the aforementioned steps. 
