@@ -52,22 +52,27 @@ Reminder: Check your Subscription’s Cost Analysis
 
 - Currently, my secure score is at 65%. Follow the recommended remediation steps provided by Azure to improve the score. 
 
-I will start with the DDos Protection and I wont show everything. However, take your time with this and Azure redirects you to everything. 
+- I will commence by implementing advanced DDos protection measures, while exercising discretion in revealing all details. Nonetheless, please take your time as Azure effortlessly guides you to the comprehensive spectrum of resources. 
 
-![vivaldi_GYcRzsJZK3](https://user-images.githubusercontent.com/109401839/235341029-feb752ee-2793-4a72-b2d0-99c710a27413.png)
+<p align="center">
+<img src="https://i.imgur.com/9YMSB33.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-![vivaldi_bLyC34Yftz](https://user-images.githubusercontent.com/109401839/235341064-6f41ab48-2787-4e66-8cdf-c00ad7941996.png)
+<p align="center">
+<img src="https://i.imgur.com/IGI5X3q.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-In the next lab, we will go over the important Recommendations to secure our environment. Another project will show case getting the score to near 100 or at 100%. The question I will pose for that project is, "Having a 100% secure lab the best security measure?".
+- In our upcoming laboratory session, we will thoroughly delve into crucial recommendations for fortifying our environment's security. Additionally, an upcoming project will exemplify the attainment of a near-perfect or 100% score. A thought-provoking query will be posed: "Is having a lab that achieves 100% security the ultimate security measure?"
 
-Now, let enter the final phase of the Cloud SOC Projects. 
+- Let us now step into the conclusive phase of the Cloud SOC Projects.
 
-### Azure Private Link & Firewall for Resources
 <details close>
 
 <div>
 
 </summary>
+
+### Azure Private Link & Firewall for Resources
 
 ![image](https://user-images.githubusercontent.com/109401839/235408787-7acc45e8-904f-4bfb-b4ec-7c6668f4453f.png)
 
