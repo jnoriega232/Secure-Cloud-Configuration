@@ -242,7 +242,7 @@ After 24 Hours of Locking - Down Environment:
 | Syslog                   | 24 (-98.87%)
 | SecurityAlert            | 0 (-100%)
 | SecurityIncident         | 0 (-100%)
-| AzureNetworkAnalytics_CL | 0 (-100%)
+| NSG Inbound Malicious Flows Allowed | 0 (-100%)
 
  <p align="center">
 <img src="https://i.imgur.com/zT9JutR.png" height="70%" width="70%" alt="Azure Free Account"/> 
@@ -265,12 +265,12 @@ After 24 Hours of Locking - Down Environment:
 
 <div>
 
-After an extensive series of projects in Microsoft Azure, we have now reached its long-awaited culmination.
+- After an extensive series of projects in Microsoft Azure, we have now reached its long-awaited culmination.
 
-In the coming days, there will be ongoing updates and maintenance to ensure optimal functionality.
+- In the coming days, there will be ongoing updates and maintenance to ensure optimal functionality.
 
-To whomever is perusing this content, I sincerely hope that you have gained substantial knowledge from this experience, as I have undoubtedly enriched my own understanding throughout the process.
+- To whomever is perusing this content, I sincerely hope that you have gained substantial knowledge from this experience, as I have undoubtedly enriched my own understanding throughout the process.
 
-Overall, the entire endeavor spanned approximately two weeks, although personal obligations occasionally interrupted its seamless progression. Consequently, there might be minor discrepancies in certain dates, which I kindly ask for your understanding.
+- Overall, the entire endeavor spanned approximately two weeks, although personal obligations occasionally interrupted its seamless progression. Consequently, there might be minor discrepancies in certain dates, which I kindly ask for your understanding.
 
-With heartfelt appreciation, I express my gratitude to all who have followed and engaged with this journey.
+- With heartfelt appreciation, I express my gratitude to all who have followed and engaged with this journey.
