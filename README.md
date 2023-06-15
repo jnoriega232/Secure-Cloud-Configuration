@@ -188,13 +188,12 @@ Reminder: Check your Subscription’s Cost Analysis
 
 - After successfully creating the Network Security Group (NSG) – I designated mine as nsg-subnet – navigate to the Virtual Networks section, access the desired Virtual Network (VNet), proceed to the Subnets tab, select the default subnet, and then add the NSG-Subnet to the NSG configuration. Remember to save the changes. 
 
-<p align="center">
+ <p align="center">
 <img src="https://i.imgur.com/Omlab24.png" height="70%" width="70%" alt="Azure Free Account"/> 
-</p
-
+</p>
 <p align="center">
 <img src="https://i.imgur.com/LqGpxfo.png" height="70%" width="70%" alt="Azure Free Account"/> 
-</p
+</p>
 
 6a. Let us revisit the Network Watcher Topology for a comprehensive review.
 
