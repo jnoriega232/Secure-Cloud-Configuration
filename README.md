@@ -78,79 +78,111 @@ Reminder: Check your Subscription’s Cost Analysis
 
 ### Goals for this lab:
 
-- Inspect MDC Regulatory Compliance (Available and Implemented)
+- Conduct a comprehensive assessment of MDC Regulatory Compliance, ensuring both its availability and successful implementation.
 - NIST 800-53 (Ref)
-- We will Implement SC-7
+- We will proceed with the implementation of SC-7.
 
-1. Configure Azure Private Link and Firewall for your Azure Key Vault Instance.
-> Ensure you use the same region and VNet the rest of your VMs are located. 
+1. Establish Azure Private Link and Firewall configurations for your Azure Key Vault Instance.
+> Please ensure that you utilize the identical region and Virtual Network (VNet) as the remaining virtual machines (VMs) in your environment. 
 
-![vivaldi_9kA8hVnhML](https://user-images.githubusercontent.com/109401839/235410803-679cf671-0110-41fd-b8be-973f7ccfd1ef.png)
+<p align="center">
+<img src="https://i.imgur.com/woYCdmV.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-1a. In the Firewalls, we will disable public access. 
-> Allow trusted Miscrosoft services to bypass this firewall. 
+1a. Within the Firewalls settings, we will deactivate public access. 
+> Enable the exemption of trusted Microsoft services from this firewall's restrictions. 
 
-``` When you enable the Key Vault Firewall, you'll be given an option to 'Allow Trusted Microsoft Services to bypass this firewall.' The trusted services list does not cover every single Azure service. For example, Azure DevOps isn't on the trusted services list. This does not imply that services that do not appear on the trusted services list are not trusted or are insecure. The trusted services list encompasses services where Microsoft controls all of the code that runs on the service. Since users can write custom code in Azure services such as Azure DevOps, Microsoft does not provide the option to create a blanket approval for the service. Furthermore, just because a service appears on the trusted service list, doesn't mean it is allowed for all scenarios.```
+- When you enable the Key Vault Firewall, you will have the option to permit trusted Microsoft services to bypass it. However, it is important to note that the trusted services list does not encompass every Azure service. For instance, Azure DevOps is not included in the trusted services list. This does not imply that services outside the trusted services list are untrusted or insecure. The trusted services list specifically includes services where Microsoft has full control over the code running on those services. Since users can write custom code in Azure services like Azure DevOps, Microsoft does not offer a blanket approval option for such services. Moreover, the inclusion of a service in the trusted services list does not guarantee its applicability in all scenarios.
 
-1b. Configure Private EndPoint Connections
+1b. Set up the configuration for Private Endpoint connections.
 
-![vivaldi_llF7NrXeNU](https://user-images.githubusercontent.com/109401839/235411138-05197fc9-624a-468a-ab20-ad808c69a5ef.png)
+- We will proceed with the creation of a private endpoint for our Azure Key Vault, following the steps outlined below.
 
-![vivaldi_IrwcXIE1uZ](https://user-images.githubusercontent.com/109401839/235411183-457d39ff-35f8-4e5e-baab-49a837b68374.png)
+<p align="center">
+<img src="https://i.imgur.com/lpmq6cc.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-![vivaldi_cJOoHn4kRF](https://user-images.githubusercontent.com/109401839/235411232-1548ec0e-7b55-45f7-9a47-b06e61d0faa8.png)
+<p align="center">
+<img src="https://i.imgur.com/DaMlUur.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-![vivaldi_Cn9neeLZKd](https://user-images.githubusercontent.com/109401839/235411264-b876bf35-6a51-42e7-886b-c13b8c518e10.png)
+<p align="center">
+<img src="https://i.imgur.com/xmtzXNq.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-![vivaldi_vDj1nUhARA](https://user-images.githubusercontent.com/109401839/235411275-0b16cd2a-b161-4fd2-b1df-683bfbfae3cf.png)
+<p align="center">
+<img src="https://i.imgur.com/aSBARrS.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
+<p align="center">
+<img src="https://i.imgur.com/aSBARrS.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 	
-2. Configure Azure Private Link and Firewall for your Azure Storage Account instance
+2. Set up the configuration of Azure Private Link and Firewall for your instance of Azure Storage Account.
 
-2a. Disable Public Access and configure EndPoint, repeat the steps above. 
+2a. Deactivate public access and configure the endpoint for your Azure Storage Account instance. Repeat the aforementioned steps. 
 
-![vivaldi_PjlZ3MgRi4](https://user-images.githubusercontent.com/109401839/235411592-2bd15e1a-7cbc-4686-8953-9c54c496ea27.png)
+<p align="center">
+<img src="https://i.imgur.com/Q3w7BQ2.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-2b. This is done on the network tab as well as the Settings -> configuration “Allow Blob public access → Disabled” as well
+<p align="center">
+<img src="https://i.imgur.com/CCxbRzb.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-![image](https://user-images.githubusercontent.com/109401839/235411467-3ed9c0d9-5e93-4800-bcc5-2d38bbcbcc89.png)
+2b. This process involves adjusting settings both in the network tab and the Settings -> Configuration section, specifically by disabling the "Allow Blob public access" option.
 
-> The DNS will assign a private IP Address and resources will resolve to this IP.
+<p align="center">
+<img src="https://i.imgur.com/SLQ6j4D.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-3. Observe Network Watcher Topology
+> The DNS system will allocate a private IP address, and all resources will be resolved to this specific IP.
 
-![vivaldi_fQ3YVFUNu1](https://user-images.githubusercontent.com/109401839/235411888-fadc37ab-db2b-4d4c-bc26-80bc95713900.png)
+3. Engage in the observation of Network Watcher Topology.
 
-4. Observe the Key Vault and Storage Account Private Endpoints
+<p align="center">
+<img src="https://i.imgur.com/e9q43EV.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-5. Login to “windows-vm” and check the IP addresses of your Key Vault and Storage Account instances.
+4. Examine the topology to observe the presence of private endpoints for both the Key Vault and Storage Account.
 
-5a. My keyvault address, ```https://akv-cyber-lab5.vault.azure.net/``` 
+5. Access the "windows-vm" and verify the IP addresses assigned to your Key Vault and Storage Account instances.
 
-![mstsc_fxQfHckld4](https://user-images.githubusercontent.com/109401839/235413357-0963704d-9468-49ca-a17c-b45c80d13314.png)
+5a. My keyvault address, ```akv-cyber-lab02.vault.azure.net``` 
 
-We can see it is resolving to a private IP address which means out Endpoint is working! Not solely because of the IP address, but because it is resolving to a private IP address within out subnet range. 
-If it was not working, we would have to troubleshoot.
+<p align="center">
+<img src="https://i.imgur.com/dEw0a3e.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-Now, lets try this but on our own computers, not the virtual machines. 
+- We can observe that the resolution is occurring successfully with a private IP address, indicating that our endpoint is functioning properly. This validation is not solely based on the IP address itself, but rather on the fact that it resolves to a private IP address within our designated subnet range. In the event that the resolution was not successful, we would need to troubleshoot the issue.
 
-![image](https://user-images.githubusercontent.com/109401839/235414783-fb98d0c3-2339-4f25-a017-7f6f53f927a1.png)
+- Now, let's attempt the same procedure on our own host computer instead of the virtual machines. 
 
-We can resolve it and it shows a public IP address but we do not have access to it. 
+<p align="center">
+<img src="https://i.imgur.com/7x5XG7G.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-This is an important distinction because my home computer is not on the VNET that the keyvault is located on. 
+- We can successfully resolve it, revealing a public IP address; however, it is imperative to note that we do not possess accessibility to it. This distinction carries significant weight as my home computer is not connected to the Virtual Network (VNET) where the keyvault is situated. 
 
-5b. Storage account address, ```https://sacyberlab05.blob.core.windows.net/``` <- This comes from the Blob service. If you remember moments ago, this was turned off to disconnect access from the public web to our services. 
+5b. The address of the storage account is represented as , ```https://sacyberlabb01.blob.core.windows.net/``` which is derived from the Blob service. As you may recall, we recently disabled this access to sever the connection between our services and the public web.
 
-![Discord_Q2mMinCHmZ](https://user-images.githubusercontent.com/109401839/235414029-26c69c5d-3bfb-44e8-8c43-45e24714370d.png)
+<p align="center">
+<img src="https://i.imgur.com/NhX8NjS.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-Lets try this on our non-azure computer:
+- Let's carry out this process on our host computer:
 
-![image](https://user-images.githubusercontent.com/109401839/235414638-2113a6d0-5bdf-476d-997f-430a5c876b21.png)
+<p align="center">
+<img src="https://i.imgur.com/1v9UZyE.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p>
 
-Now lets see if the Endpoint work by running this in the Azure computer: 
+- Now, let's verify the functionality of the endpoint by executing this on the Azure computer:
 
-![image](https://user-images.githubusercontent.com/109401839/235414965-914e2cb5-1859-43ff-99f9-2ea46832f3ff.png)
+<p align="center">
+<img src="https://i.imgur.com/O0x3eaf.png" height="70%" width="70%" alt="Azure Free Account"/> 
+</p
+
+- Within our virtual machine (VM), we can observe that it resolves to a private IP address, indicating that it is in the same Virtual Network (VNet) as our storage account and private endpoint.
 
 6. Create NSG & Attach to subnet
 
