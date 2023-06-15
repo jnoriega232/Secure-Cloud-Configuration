@@ -1,6 +1,6 @@
 # Securing The Cloud Configuration
 
-## We will mitigate risks by focusing on the following areas:: 
+## We will mitigate risks by focusing on the following areas: 
 
 <div>
 
